@@ -15,11 +15,8 @@ import os
 import dj_database_url
 
 # Usando PostgreSQL com Heroku
-DATABSES = {
-    'default': dj_database_url.config(
-        default='postgres://localhost/your-database-name',
-        engine='django.db.backends.postgresql_psycopg2'
-    )
+DATABASES = {
+    'default': dj_database_url.config()
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
